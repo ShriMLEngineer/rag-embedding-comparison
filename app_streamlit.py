@@ -11,20 +11,36 @@ from openai import OpenAI
 
 import streamlit as st
 
-# Load API key from Streamlit secrets OR local .env (for local dev)
-if "OPENAI_API_KEY" in st.secrets:
-    OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+# ----------------------------------------------------
+# Load API key: secrets → .env → user input in app
+# ----------------------------------------------------
+
+from dotenv import load_dotenv
+load_dotenv()
+
+# 1) Try Streamlit secrets first (your deployed app)
+secret_key = st.secrets.get("OPENAI_API_KEY") if hasattr(st, "secrets") else None
+
+# 2) Then fallback to .env (your local dev)
+env_key = os.getenv("OPENAI_API_KEY")
+
+# 3) If neither exists, ask user for key in sidebar
+if not secret_key and not env_key:
+    st.sidebar.warning("🔐 OpenAI API Key Required")
+    user_key = st.sidebar.text_input(
+        "Paste your OpenAI API key",
+        type="password",
+        help="Your key is not stored — it only lives for this session."
+    )
+    OPENAI_API_KEY = user_key
 else:
-    from dotenv import load_dotenv
-    load_dotenv()
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    OPENAI_API_KEY = secret_key or env_key
 
 if not OPENAI_API_KEY:
-    raise ValueError(
-        "OpenAI API key not found. Set it in Streamlit secrets or in a .env file."
-    )
+    st.stop()  # Gracefully stop app until user provides key
 
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+
 
 # ----------------------------
 # Helpers (same logic as before)
@@ -118,9 +134,6 @@ def main():
             value=os.getenv("OPENAI_CHAT_MODEL", "gpt-4.1-mini")
         )
 
-        if not os.getenv("OPENAI_API_KEY"):
-            st.error("❌ OPENAI_API_KEY is missing in .env")
-            return
 
     # -------- Load indexes once --------
     @st.cache_resource
@@ -143,7 +156,7 @@ def main():
     # -------- User Question --------
     question = st.text_input(
         "Enter your question:",
-        placeholder="Example: Why did the payment fail and which account was impacted?"
+        placeholder="Example: Which agent handled customer with broadband 80020000008?"
     )
 
     if st.button("Run RAG Comparison") and question.strip():
