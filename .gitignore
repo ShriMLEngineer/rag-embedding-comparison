@@ -1,9 +1,6 @@
 # Virtual environment
 .venv/
 
-# FAISS indexes (large binary files)
-indexes/
-
 # Secrets / API keys
 .env
 
