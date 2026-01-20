@@ -1,1 +1,15 @@
+# Virtual environment
+.venv/
 
+# FAISS indexes (large binary files)
+indexes/
+
+# Secrets / API keys
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit cache
+.streamlit/
