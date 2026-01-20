@@ -59,21 +59,47 @@ The Streamlit application allows users to:
   - Retrieved chunks  
   - LLM-generated answers grounded in each retrieval  
 
-### Home Screen (Question Input)
-<img src="images/app_home.png" width="100%">
+---
 
-### Retrieval Results (Side-by-Side Comparison)
-<img src="images/app_results.png" width="100%">
+## 📸 Results at a Glance (Three Key Cases)
+
+### **Case 1 — Numeric Question: Sentence-Transformers Fails (Core Finding)**
+> *“Which agent handled customer with broadband 80020000008?”*
+
+<img src="images/case_numeric_st_fails.png" width="100%">
+
+**What we observed:**
+- ❌ Sentence-Transformers: retrieved incorrect or loosely related chunks  
+- ✅ OpenAI embeddings: retrieved the correct transcript and agent  
+
+---
+
+### **Case 2 — Numeric Question: Both Models Work (Edge Case)**
+> *“Show me the transcript for service ID 90030000005”*
+
+<img src="images/case_numeric_both_work.png" width="100%">
+
+**What this shows:**
+- Not all numeric queries break Sentence-Transformers  
+- Some numeric patterns are still retrievable  
+- The problem appears to depend on *how the number appears in context*
+
+---
+
+### **Case 3 — Textual Question: Both Models Work (Baseline)**
+> *“Which agent handled a fraud complaint?”*
+
+<img src="images/case_textual_both_work.png" width="100%">
+
+**What this confirms:**
+- For purely textual queries, both embeddings perform similarly  
+- The gap appears primarily when **long numeric identifiers are involved**
 
 ---
 
 ## 🔍 Key Observation (Core Finding)
 
-### 🧪 Experiment Result
-
-When querying with a **numeric identifier**, for example:
-
-> *“Which agent handled customer with broadband **80020000008**?”*
+When querying with certain **long numeric identifiers** (e.g., broadband IDs), we consistently saw:
 
 ### ✅ OpenAI Embeddings
 - Successfully retrieved the correct transcript  
@@ -123,4 +149,4 @@ Try queries like:
 
 - “Which agent handled customer with broadband 80020000008?”
 - “Show me the transcript for service ID 90030000005”
-- "What happens when sim replacement request is placed by user?"
+- “Which agent handled a fraud complaint?”
