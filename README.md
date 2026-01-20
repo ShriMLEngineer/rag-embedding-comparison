@@ -49,18 +49,21 @@ This allowed us to compare retrieval behavior **side-by-side on identical data**
 
 ---
 
-### 🔹 Streamlit UI (Interactive Comparison)
+## 📱 Streamlit App (Interactive Comparison)
 
-We built a Streamlit application that:
+The Streamlit application allows users to:
 
-- Takes **one user question**
-- Runs retrieval on **both indexes simultaneously**
-- Shows:
-  - Retrieved chunks from each index  
-  - LLM-generated answer grounded in the retrieved context  
-- Enables **direct visual comparison** of:
-  - Retrieval quality  
-  - Answer correctness  
+- Enter **one question**
+- Retrieve results from **both indexes simultaneously**
+- Compare:
+  - Retrieved chunks  
+  - LLM-generated answers grounded in each retrieval  
+
+### Home Screen (Question Input)
+<img src="images/app_home.png" width="100%">
+
+### Retrieval Results (Side-by-Side Comparison)
+<img src="images/app_results.png" width="100%">
 
 ---
 
@@ -73,14 +76,14 @@ When querying with a **numeric identifier**, for example:
 > *“Which agent handled customer with broadband **80020000008**?”*
 
 ### ✅ OpenAI Embeddings
-- Successfully retrieved the correct transcript
-- Identified the correct agent
-- Generated an accurate, grounded answer
+- Successfully retrieved the correct transcript  
+- Identified the correct agent  
+- Generated an accurate, grounded answer  
 
 ### ❌ Sentence-Transformers
-- Struggled to retrieve the correct record
-- Often retrieved semantically similar but numerically incorrect events
-- Resulted in incorrect or incomplete answers
+- Struggled to retrieve the correct record  
+- Often retrieved semantically similar but numerically incorrect events  
+- Resulted in incorrect or incomplete answers  
 
 ---
 
@@ -114,7 +117,10 @@ For enterprise RAG systems dealing with:
 
 ## 🚀 Live Demo
 
-👉 **[Add your Streamlit app link here]**
+👉 **https://rag-embedding-comparison-mhnzfby6qxsghmeb92zkhc.streamlit.app/**
 
-Example:
+Try queries like:
 
+- “Which agent handled customer with broadband 80020000008?”
+- “Show me the transcript for service ID 90030000005”
+- "What happens when sim replacement request is placed by user?"
