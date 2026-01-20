@@ -1,6 +1,3 @@
-# rag-embedding-comparison
-A Streamlit-based RAG app that compares Sentence-Transformers and OpenAI embeddings differences
-
 # 🔍 RAG Embedding Comparison: Sentence-Transformers vs OpenAI
 
 This repository documents a practical experiment in **Retrieval-Augmented Generation (RAG)** aimed at understanding how different embedding models behave in real-world, numeric-heavy customer support scenarios.
