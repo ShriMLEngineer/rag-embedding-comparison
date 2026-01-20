@@ -8,6 +8,24 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
+
+import streamlit as st
+
+# Load API key from Streamlit secrets OR local .env (for local dev)
+if "OPENAI_API_KEY" in st.secrets:
+    OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+else:
+    from dotenv import load_dotenv
+    load_dotenv()
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise ValueError(
+        "OpenAI API key not found. Set it in Streamlit secrets or in a .env file."
+    )
+
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+
 # ----------------------------
 # Helpers (same logic as before)
 # ----------------------------
