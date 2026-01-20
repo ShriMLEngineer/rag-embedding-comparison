@@ -2,15 +2,15 @@
   {
     "id": "Transcript_001",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_001. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000001. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Hi, I'd like to check my data balance for mobile number 9000000001. \nAgent: Sure! Let me pull up your account. Can I get your account PIN for verification? \nCustomer: It's 1234. \nAgent: Thank you. I see here you have 3.2 GB remaining out of your 10 GB monthly plan. You've used 6.8 GB so far this billing cycle. \nCustomer: That seems like a lot. When does my billing cycle end? \nAgent: Your cycle ends on the 25th of each month. You still have 9 days left, so you might want to monitor your usage. \nCustomer: Got it. Do I get any notifications when I'm reaching my limit? \nAgent: Yes, you'll receive SMS alerts at 75%, 90%, and 100% usage. \nCustomer: Perfect, thank you for that information. \nAgent: You're welcome! Is there anything else I can help with? \nCustomer: No, that's all for now. \nAgent: Thank you for contacting us today!",
     "transcript_timestamp": "2020-05-16 09:47:00",
-    "intent": "USAGE_ENQUIRY",
+    "intent": "USAGE_ENQUIRY_DETAILED",
     "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_002",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_002. How can I help? \nCustomer: Please update my address for broadband account 80020000002. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: Please update my address for broadband account 80020000002. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-16 10:34:00",
     "intent": "ADDRESS_UPDATE",
     "agent_id": "Agent_002"
@@ -18,7 +18,7 @@
   {
     "id": "Transcript_003",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_003. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000003. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000003. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-16 11:21:00",
     "intent": "PAYMENT_FAILURE",
     "agent_id": "Agent_003"
@@ -26,7 +26,7 @@
   {
     "id": "Transcript_004",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_004. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000004. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000004. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-16 12:08:00",
     "intent": "CHARGE_DISPUTE",
     "agent_id": "Agent_004"
@@ -34,7 +34,7 @@
   {
     "id": "Transcript_005",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_005. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000005. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000005. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-16 12:55:00",
     "intent": "SIM_REPLACEMENT",
     "agent_id": "Agent_005"
@@ -42,15 +42,15 @@
   {
     "id": "Transcript_006",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_006. How can I help? \nCustomer: Can you check the status of my recharge for 80020000006? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: Hi, I need to check something about my account. I'm seeing some unusual charges. \nAgent: I'm sorry to hear that. Let me help you investigate. Can you tell me what charges you're concerned about? \nCustomer: Yes, there are three charges of 499 rupees each that I don't recognize. They appeared within the last 2 days. \nAgent: Let me look at your transaction history. I see those charges - they're for premium service upgrades. Do you recall authorizing any upgrades? \nCustomer: No, absolutely not! I didn't make those purchases. This looks like fraud. \nAgent: I understand your concern. These could be unauthorized transactions. Let me put a hold on your account immediately and we'll need to open a fraud investigation. Can you confirm if you've shared your account details with anyone recently? \nCustomer: I don't think so... wait, my phone was stolen last week but I got it back the next day. Could that be related? \nAgent: That's very likely. Once a device is accessed, someone could have intercepted your SMS OTP. We need to block this account now and issue you a new SIM. \nCustomer: How long will this take? I need my phone for work. \nAgent: I can initiate the fraud claim and SIM replacement right now. You'll receive a temporary credentials via email within 2 hours. Your new SIM will arrive within 24 hours. The fraudulent charges will be reversed within 7-10 business days. \nCustomer: Okay, please do that immediately. This is unacceptable. \nAgent: Done. Fraud case ID is FR-2020-054221. You'll receive updates via email and SMS. Is there anything else? \nCustomer: No, thank you.",
     "transcript_timestamp": "2020-05-16 13:42:00",
-    "intent": "PAYMENT_STATUS",
+    "intent": "FRAUD_DETECTION_SUSPICIOUS_TRANSACTIONS",
     "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_007",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_007. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000007. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000007. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-16 14:29:00",
     "intent": "PROFILE_UPDATE",
     "agent_id": "Agent_007"
@@ -58,7 +58,7 @@
   {
     "id": "Transcript_008",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_008. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000008. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000008. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-16 15:16:00",
     "intent": "MODEM_REPLACEMENT",
     "agent_id": "Agent_008"
@@ -66,7 +66,7 @@
   {
     "id": "Transcript_009",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_009. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000009? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000009? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-16 16:03:00",
     "intent": "DATA_USAGE_ENQUIRY",
     "agent_id": "Agent_009"
@@ -74,7 +74,7 @@
   {
     "id": "Transcript_010",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_010. How can I help? \nCustomer: Please retry my failed recharge for 80020000010. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Please retry my failed recharge for 80020000010. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-16 16:50:00",
     "intent": "PAYMENT_RETRY",
     "agent_id": "Agent_010"
@@ -82,15 +82,15 @@
   {
     "id": "Transcript_011",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_011. How can I help? \nCustomer: I\u2019m facing a network outage on 9000000011. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: Yes, I'm facing a network outage on my mobile 9000000011. I've been without service for over 6 hours now. \nAgent: I apologize for the inconvenience. Let me check the network status in your area. What's your location? \nCustomer: I'm in downtown Mumbai, near the Central Business District. \nAgent: I see there's a tower malfunction reported in that area since 4 PM today. Our technical team is already investigating. \nCustomer: This is the second time this month! This is affecting my business calls. \nAgent: I completely understand how critical this is. Let me escalate this to the senior technical team. I can also offer you a 50% credit on this month's bill as compensation. \nCustomer: I need a better ETA than that. When will service be restored? \nAgent: Based on current repair estimates, we expect service to be fully restored within the next 2 hours, no later than 8:30 PM. \nCustomer: And if it's not? \nAgent: If service isn't restored by 9 PM, you'll receive an automatic 100% credit for today's service. We'll also add a 50GB bonus data pack to your account. \nCustomer: Okay, that's fair. I'll monitor the situation. Thanks for being proactive. \nAgent: Thank you for your patience. You can check status updates via our app or call back anytime. Have a good day!",
     "transcript_timestamp": "2020-05-16 17:37:00",
-    "intent": "OUTAGE_COMPLAINT",
+    "intent": "OUTAGE_COMPLAINT_CRITICAL_ESCALATION",
     "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_012",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_012. How can I help? \nCustomer: What is my current plan for 80020000012? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: What is my current plan for 80020000012? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-16 18:24:00",
     "intent": "PLAN_ENQUIRY",
     "agent_id": "Agent_012"
@@ -98,7 +98,7 @@
   {
     "id": "Transcript_013",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_013. How can I help? \nCustomer: Please update my email for broadband account 9000000013. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: Please update my email for broadband account 9000000013. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-16 19:11:00",
     "intent": "PROFILE_UPDATE_EMAIL",
     "agent_id": "Agent_013"
@@ -106,697 +106,697 @@
   {
     "id": "Transcript_014",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_014. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000014. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000014. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-16 19:58:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_014"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_015",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_015. How can I help? \nCustomer: I need an itemized bill for 9000000015. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: I need an itemized bill for 9000000015. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-16 20:45:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_015"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_016",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_016. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 80020000016. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: Hi, I'm calling from a new location and my account was suddenly locked. I can't make calls or access data. \nAgent: That's unusual. Let me check your account status. Can you provide your phone number? \nCustomer: It's 80020000016. I was traveling for work in a different city and now I'm blocked. \nAgent: I see your account has been flagged for unusual geographic activity - login from two different states within 1 hour. This is a security measure. \nCustomer: That's because I traveled by flight! I landed 2 hours ago. Can you unblock it? \nAgent: I need to verify your identity first. Can you answer some security questions? What was the last merchant name on your bill? \nCustomer: Um, I think it was Starbucks? I'm not sure exactly... \nAgent: I see. When was your account created with us? \nCustomer: Around 5 years ago. \nAgent: Actually, your account shows it was created 2 months ago. This doesn't match. Your original SIM was also recently changed. \nCustomer: Wait, what? I didn't change my SIM! I've had this number for years! \nAgent: Sir, I need to inform you - your account shows signs of being compromised. Your original credentials no longer match our records. This could be identity theft or SIM swapping fraud. \nCustomer: Oh my god! What do I do? \nAgent: Don't worry, I'm escalating this to our fraud team immediately. They'll contact you within 15 minutes. In the meantime, your account is locked for protection. Please file a complaint with cybercrime as well. \nCustomer: This is serious. Okay, I'll wait for their call. \nAgent: Fraud case opened: FRD-2020-78341. You'll receive an SMS confirmation shortly.",
     "transcript_timestamp": "2020-05-16 21:32:00",
-    "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_016"
+    "intent": "SUSPECTED_SIM_SWAP_FRAUD",
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_017",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_017. How can I help? \nCustomer: Please update my address for broadband account 9000000017. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: Please update my address for broadband account 9000000017. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-16 22:19:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_017"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_018",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_018. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000018. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000018. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-16 23:06:00",
     "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_018"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_019",
     "transcript_date": "2020-05-16",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_019. How can I help? \nCustomer: I see incorrect charges on my landline number 9000000019. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: I see incorrect charges on my landline number 9000000019. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-16 23:53:00",
     "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_019"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_020",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_020. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000020. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000020. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-17 00:40:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_020"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_021",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_021. How can I help? \nCustomer: Can you check the status of my recharge for 9000000021? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: Can you check the status of my recharge for 9000000021? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
     "transcript_timestamp": "2020-05-17 01:27:00",
     "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_021"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_022",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_022. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000022. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000022. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-17 02:14:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_022"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_023",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_023. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 9000000023. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Hi, I want to make some changes to my plan but I have questions. \nAgent: Of course! What would you like to know? \nCustomer: I see this new 'Premium International' plan advertised. How much is it? \nAgent: That plan costs 4999 rupees monthly with unlimited international calling and roaming. \nCustomer: That's quite expensive. What am I currently paying? \nAgent: You're on the 'Standard' plan at 499 rupees per month. The new plan would be a significant increase, but you get unlimited international benefits. \nCustomer: I barely use international calling. Do I need to commit to a contract? \nAgent: The Premium plan requires a 12-month commitment, but I can offer you our 'Plus' plan at 899 rupees instead - it includes 100 minutes of international calling with much better roaming rates. \nCustomer: Can I try it for a month and then go back? \nAgent: Actually, let me add the Plus plan to your account for one month on trial. If you don't like it after 30 days, you pay nothing for this trial period and we'll revert you to your current plan. \nCustomer: That sounds great! Can you do that now? \nAgent: Consider it done. You'll receive a confirmation SMS within a minute. You'll be upgraded starting tomorrow midnight to avoid any mid-cycle charges. \nCustomer: Perfect! Thanks for working with me on this. \nAgent: My pleasure! Is there anything else I can help you with?",
     "transcript_timestamp": "2020-05-17 03:01:00",
-    "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_023"
+    "intent": "PLAN_UPGRADE_UPSELL_WITH_TRIAL",
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_024",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_024. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000024? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000024? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-17 03:48:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_024"
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_025",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_025. How can I help? \nCustomer: Please retry my failed recharge for 9000000025. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: Please retry my failed recharge for 9000000025. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-17 04:35:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_025"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_026",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_026. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000026. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000026. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
     "transcript_timestamp": "2020-05-17 05:22:00",
     "intent": "OUTAGE_COMPLAINT",
-    "agent_id": "Agent_026"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_027",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_027. How can I help? \nCustomer: What is my current plan for 9000000027? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: What is my current plan for 9000000027? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-17 06:09:00",
     "intent": "PLAN_ENQUIRY",
-    "agent_id": "Agent_027"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_028",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_028. How can I help? \nCustomer: Please update my email for broadband account 80020000028. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: Please update my email for broadband account 80020000028. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-17 06:56:00",
     "intent": "PROFILE_UPDATE_EMAIL",
-    "agent_id": "Agent_028"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_029",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_029. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000029. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000029. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-17 07:43:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_029"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_030",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_030. How can I help? \nCustomer: I need an itemized bill for 80020000030. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: I need an itemized bill for 80020000030. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-17 08:30:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_030"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_031",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_031. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000031. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000031. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
     "transcript_timestamp": "2020-05-17 09:17:00",
     "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_031"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_032",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_032. How can I help? \nCustomer: Please update my address for broadband account 80020000032. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: Please update my address for broadband account 80020000032. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-17 10:04:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_032"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_033",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_033. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000033. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000033. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-17 10:51:00",
     "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_033"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_034",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_034. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000034. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000034. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-17 11:38:00",
     "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_034"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_035",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_035. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000035. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000035. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-17 12:25:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_035"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_036",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_036. How can I help? \nCustomer: Can you check the status of my recharge for 80020000036? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Hi, I'm calling because I received a call this morning from someone claiming to be from Teletele asking me to verify my account details. That sounded fishy. \nAgent: Thank you for reporting that! That's definitely suspicious. Did you provide any information? \nCustomer: No, I hung up immediately, but they knew my name and last 4 digits of my account. \nAgent: That's concerning. Can you tell me exactly what they asked for? \nCustomer: They asked for my full account number, PIN, and credit card details for 'security verification'. They said they'd call from +91-XXXX-XXXX-1234 and hung up when I questioned them. \nAgent: That was a phishing scam. Our genuine team never calls asking for PINs or credit card details. I'm very glad you didn't share anything. \nCustomer: So what do I do now? \nAgent: Let me immediately flag your account as at-risk. I'll also send you a security advisory via SMS and email. Change your PIN right now - I can send you a one-time password to do that securely. We'll also enable extra security on your account. \nCustomer: Can I report this scam? \nAgent: Absolutely. Report it to: 1. Our fraud hotline: 1800-FRAUD-91. 2. Your local police cybercrime cell. 3. Report the phone number and details to National Cybercrime Hotline. \nCustomer: Good to know. Thank you for taking this seriously. \nAgent: It's our priority to keep you safe. Your new security settings are now active. Is there anything else?",
     "transcript_timestamp": "2020-05-17 13:12:00",
-    "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_036"
+    "intent": "PHISHING_SCAM_WARNING_PREVENTION",
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_037",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_037. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000037. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000037. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-17 13:59:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_037"
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_038",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_038. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000038. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000038. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-17 14:46:00",
     "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_038"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_039",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_039. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000039? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000039? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-17 15:33:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_039"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_040",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_040. How can I help? \nCustomer: Please retry my failed recharge for 80020000040. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Please retry my failed recharge for 80020000040. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-17 16:20:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_040"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_041",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_041. How can I help? \nCustomer: I\u2019m facing a network outage on 9000000041. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: I\u2019m facing a network outage on 9000000041. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
     "transcript_timestamp": "2020-05-17 17:07:00",
     "intent": "OUTAGE_COMPLAINT",
-    "agent_id": "Agent_041"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_042",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_042. How can I help? \nCustomer: What is my current plan for 80020000042? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: What is my current plan for 80020000042? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-17 17:54:00",
     "intent": "PLAN_ENQUIRY",
-    "agent_id": "Agent_042"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_043",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_043. How can I help? \nCustomer: Please update my email for broadband account 9000000043. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: Please update my email for broadband account 9000000043. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-17 18:41:00",
     "intent": "PROFILE_UPDATE_EMAIL",
-    "agent_id": "Agent_043"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_044",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_044. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000044. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000044. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-17 19:28:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_044"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_045",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_045. How can I help? \nCustomer: I need an itemized bill for 9000000045. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: I need an itemized bill for 9000000045. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-17 20:15:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_045"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_046",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_046. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 80020000046. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 80020000046. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
     "transcript_timestamp": "2020-05-17 21:02:00",
     "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_046"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_047",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_047. How can I help? \nCustomer: Please update my address for broadband account 9000000047. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: Please update my address for broadband account 9000000047. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-17 21:49:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_047"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_048",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_048. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000048. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000048. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-17 22:36:00",
     "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_048"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_049",
     "transcript_date": "2020-05-17",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_049. How can I help? \nCustomer: I see incorrect charges on my landline number 9000000049. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Hi, I need to report something very suspicious on my account. \nAgent: Of course, I'm here to help. What's the issue? \nCustomer: I received multiple OTPs (One-Time Passwords) in the last hour that I didn't request. At least 7 or 8 of them. Then suddenly, I lost mobile service. \nAgent: This is very concerning. OTPs being generated without your request typically means someone is trying to access your account. Let me check the access logs. \nAgent: I see here - there were 8 failed login attempts from an IP address in Bangalore, and you're located in Pune, correct? \nCustomer: Yes! That's definitely not me. \nAgent: Your account has been automatically locked for security. This is a targeted account takeover attempt. \nCustomer: What does that mean? Can they access my bank account linked to my SIM? \nAgent: That's why we locked it immediately. If you have SIM-based two-factor authentication with your bank, they could potentially attempt unauthorized transactions. You need to contact your bank RIGHT NOW and alert them to this incident. \nCustomer: Oh god, what's my reference number? \nAgent: Security Incident Ref: SEC-2020-92847. Tell your bank this number. Also file an FIR with cybercrime immediately. I'm blocking all payment services on this line right now. \nCustomer: This is scary. How did they get my number? \nAgent: We'll investigate. In the meantime, do NOT use this SIM for any banking transactions for the next 48 hours. We'll issue you a replacement SIM with a new number if needed. \nCustomer: Please do that. Can it be delivered today? \nAgent: Yes, given the severity, we'll expedite it. Pick up location or home delivery? \nCustomer: Home delivery please. \nAgent: It will be there by 8 PM today. Your emergency reference is: EXP-SIM-2020-48291.",
     "transcript_timestamp": "2020-05-17 23:23:00",
-    "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_049"
+    "intent": "ACCOUNT_TAKEOVER_ATTEMPT_CRITICAL",
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_050",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_050. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000050. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000050. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 00:10:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_050"
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_051",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_051. How can I help? \nCustomer: Can you check the status of my recharge for 9000000051? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: Can you check the status of my recharge for 9000000051? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
     "transcript_timestamp": "2020-05-18 00:57:00",
     "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_051"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_052",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_052. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000052. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000052. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-18 01:44:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_052"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_053",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_053. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 9000000053. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 9000000053. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 02:31:00",
     "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_053"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_054",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_054. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000054? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000054? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-18 03:18:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_054"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_055",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_055. How can I help? \nCustomer: Please retry my failed recharge for 9000000055. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: Please retry my failed recharge for 9000000055. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-18 04:05:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_055"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_056",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_056. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000056. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000056. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
     "transcript_timestamp": "2020-05-18 04:52:00",
     "intent": "OUTAGE_COMPLAINT",
-    "agent_id": "Agent_056"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_057",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_057. How can I help? \nCustomer: What is my current plan for 9000000057? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: What is my current plan for 9000000057? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-18 05:39:00",
     "intent": "PLAN_ENQUIRY",
-    "agent_id": "Agent_057"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_058",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_058. How can I help? \nCustomer: Please update my email for broadband account 80020000058. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: Please update my email for broadband account 80020000058. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-18 06:26:00",
     "intent": "PROFILE_UPDATE_EMAIL",
-    "agent_id": "Agent_058"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_059",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_059. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000059. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000059. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-18 07:13:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_059"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_060",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_060. How can I help? \nCustomer: I need an itemized bill for 80020000060. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: I need an itemized bill for 80020000060. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-18 08:00:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_060"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_061",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_061. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000061. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000061. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
     "transcript_timestamp": "2020-05-18 08:47:00",
     "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_061"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_062",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_062. How can I help? \nCustomer: Please update my address for broadband account 80020000062. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Please update my address for broadband account 80020000062. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-18 09:34:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_062"
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_063",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_063. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000063. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: Hi, I'm trying to understand why I'm being charged for services I never subscribed to. \nAgent: I apologize for the confusion. Can you be specific about which charges? \nCustomer: There are recurring charges for 'Premium Content' service at 99 rupees daily for the last 15 days. That's over 1500 rupees! I never opted in. \nAgent: Let me investigate. These charges seem to come from a third-party merchant. Did you ever click any links in SMS messages or tap 'yes' to any prompts? \nCustomer: Oh wait... I got an SMS about a 'Free Game Download' and I clicked the link. Is that it? \nAgent: That's likely the culprit. You were redirected to a third-party opt-in page that auto-enrolled you in a premium service. This is a known scam method. \nCustomer: Can you cancel this? \nAgent: Immediately cancelled. I'm also reversing all 15 charges - that's 1500 rupees credit to your account. \nCustomer: Just like that? \nAgent: Yes, because this was predatory third-party fraud. Additionally, I'm adding a filter to your account so you can't be auto-enrolled in services without explicit approval through our official portal. \nCustomer: How do I avoid this in future? \nAgent: Never click links in random SMS messages. If you want any paid service, always come directly to our official app or website. We also recommend replying STOP to any suspicious service messages. \nCustomer: Thank you so much for fixing this quickly. \nAgent: You're welcome! Your account is now protected. Is there anything else?",
     "transcript_timestamp": "2020-05-18 10:21:00",
-    "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_063"
+    "intent": "UNAUTHORIZED_THIRD_PARTY_CHARGES_REFUND",
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_064",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_064. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000064. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000064. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 11:08:00",
     "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_064"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_065",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_065. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000065. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000065. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 11:55:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_065"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_066",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_066. How can I help? \nCustomer: Can you check the status of my recharge for 80020000066? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Can you check the status of my recharge for 80020000066? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
     "transcript_timestamp": "2020-05-18 12:42:00",
     "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_066"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_067",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_067. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000067. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000067. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-18 13:29:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_067"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_068",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_068. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000068. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000068. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 14:16:00",
     "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_068"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_069",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_069. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000069? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000069? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-18 15:03:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_069"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_070",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_070. How can I help? \nCustomer: Please retry my failed recharge for 80020000070. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: Please retry my failed recharge for 80020000070. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-18 15:50:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_070"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_071",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_071. How can I help? \nCustomer: I\u2019m facing a network outage on 9000000071. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: I\u2019m facing a network outage on 9000000071. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
     "transcript_timestamp": "2020-05-18 16:37:00",
     "intent": "OUTAGE_COMPLAINT",
-    "agent_id": "Agent_071"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_072",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_072. How can I help? \nCustomer: What is my current plan for 80020000072? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: What is my current plan for 80020000072? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-18 17:24:00",
     "intent": "PLAN_ENQUIRY",
-    "agent_id": "Agent_072"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_073",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_073. How can I help? \nCustomer: Please update my email for broadband account 9000000073. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: Please update my email for broadband account 9000000073. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-18 18:11:00",
     "intent": "PROFILE_UPDATE_EMAIL",
-    "agent_id": "Agent_073"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_074",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_074. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000074. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 80020000074. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-18 18:58:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_074"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_075",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_075. How can I help? \nCustomer: I need an itemized bill for 9000000075. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: I need an itemized bill for 9000000075. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-18 19:45:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_075"
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_076",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_076. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 80020000076. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 80020000076. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
     "transcript_timestamp": "2020-05-18 20:32:00",
     "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_076"
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_077",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_077. How can I help? \nCustomer: Please update my address for broadband account 9000000077. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: Please update my address for broadband account 9000000077. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-18 21:19:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_077"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_078",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_078. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000078. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: My auto-payment failed for mobile plan 80020000078. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-18 22:06:00",
     "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_078"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_079",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_079. How can I help? \nCustomer: I see incorrect charges on my landline number 9000000079. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Hi, I received a notification that my account was accessed from an unknown location 3 times in the past 6 hours. \nAgent: That's a red flag. Let me pull up the access details. What device do you typically use for your account? \nCustomer: I use my personal laptop at home and sometimes my phone. \nAgent: I see 3 successful logins from: 1) Your home IP (Normal), 2) A proxy server in Russia at 2:15 AM, 3) Another proxy in Romania at 4:30 AM. All from your account. \nCustomer: I was sleeping at 2 AM! I definitely wasn't accessing from Russia! \nAgent: This is account compromise. Your password has been breached. Someone has unauthorized access to your account. \nCustomer: What can they see? \nAgent: They have access to: account statements, payment methods on file, personal data, and could change account settings or make purchases. \nAgent: Here's what I'm doing NOW: 1) Invalidating your current password, 2) Forcing logout from all sessions, 3) Resetting your security questions, 4) Sending you a temporary password via registered email. 5) Enabling 2-factor authentication. \nCustomer: When should I change my password again? \nAgent: Immediately when you receive the temporary one. Make it strong - mix of uppercase, lowercase, numbers, and special characters. \nCustomer: Should I report this somewhere else? \nAgent: Yes. Report to: 1) Your email provider (if they have your email password), 2) Any banks linked to this account, 3) Local cybercrime cell. The attempt originated from Russia, so it's organized fraud. \nCustomer: How did they get my password? \nAgent: Could be from a data breach you don't know about, phishing email, or malware. Change passwords on ALL your accounts, not just this one. \nCustomer: This is exhausting. Thanks for being thorough though. \nAgent: Security is paramount. Your account is now secured. Check your email for the temporary password within 5 minutes.",
     "transcript_timestamp": "2020-05-18 22:53:00",
-    "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_079"
+    "intent": "CREDENTIAL_BREACH_INTERNATIONAL_ATTACK",
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_080",
     "transcript_date": "2020-05-18",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_080. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000080. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: I need a SIM replacement for mobile number 80020000080. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-18 23:40:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_080"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_081",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_081. How can I help? \nCustomer: Can you check the status of my recharge for 9000000081? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: Can you check the status of my recharge for 9000000081? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
     "transcript_timestamp": "2020-05-19 00:27:00",
     "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_081"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_082",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_082. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000082. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: Please correct my contact details for broadband account 80020000082. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-19 01:14:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_082"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_083",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_083. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 9000000083. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 9000000083. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-19 02:01:00",
     "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_083"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_084",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_084. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000084? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: Can you share last month\u2019s usage for 80020000084? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-19 02:48:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_084"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_085",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_085. How can I help? \nCustomer: Please retry my failed recharge for 9000000085. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: Please retry my failed recharge for 9000000085. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-19 03:35:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_085"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_086",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_086. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000086. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: I\u2019m facing a network outage on 80020000086. \nAgent: I\u2019m sorry for the inconvenience. Our team is working on it. \nCustomer: Any timeline? \nAgent: Expected resolution within 2 hours. \nCustomer: Okay, thanks.",
     "transcript_timestamp": "2020-05-19 04:22:00",
     "intent": "OUTAGE_COMPLAINT",
-    "agent_id": "Agent_086"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_087",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_087. How can I help? \nCustomer: What is my current plan for 9000000087? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: What is my current plan for 9000000087? \nAgent: You are on the Unlimited Plus plan. \nCustomer: Thank you. \nAgent: Let me know if you want to change it.",
     "transcript_timestamp": "2020-05-19 05:09:00",
     "intent": "PLAN_ENQUIRY",
-    "agent_id": "Agent_087"
+    "agent_id": "Agent_009"
   },
   {
     "id": "Transcript_088",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_088. How can I help? \nCustomer: Please update my email for broadband account 80020000088. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jennifer. How can I help? \nCustomer: Please update my email for broadband account 80020000088. \nAgent: Done. Your email has been updated. \nCustomer: Thanks. \nAgent: Happy to assist.",
     "transcript_timestamp": "2020-05-19 05:56:00",
     "intent": "PROFILE_UPDATE_EMAIL",
-    "agent_id": "Agent_088"
+    "agent_id": "Agent_010"
   },
   {
     "id": "Transcript_089",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_089. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000089. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Daniel. How can I help? \nCustomer: Please schedule a technician visit for broadband ID 9000000089. \nAgent: I\u2019ve booked a visit for tomorrow. \nCustomer: Perfect, thank you. \nAgent: You\u2019ll receive a confirmation.",
     "transcript_timestamp": "2020-05-19 06:43:00",
     "intent": "TECH_VISIT",
-    "agent_id": "Agent_089"
+    "agent_id": "Agent_011"
   },
   {
     "id": "Transcript_090",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_090. How can I help? \nCustomer: I need an itemized bill for 80020000090. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Lisa. How can I help? \nCustomer: I need an itemized bill for 80020000090. \nAgent: I\u2019ve sent it to your registered email. \nCustomer: Thanks. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-19 07:30:00",
     "intent": "BILLING_ENQUIRY",
-    "agent_id": "Agent_090"
+    "agent_id": "Agent_012"
   },
   {
     "id": "Transcript_091",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_091. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000091. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Matthew. How can I help? \nCustomer: I\u2019d like to check my data balance for mobile number 9000000091. \nAgent: Let me check that for you. \nAgent: You have 3.2 GB remaining. \nCustomer: Thank you. \nAgent: Is there anything else I can help with? \nCustomer: No, that\u2019s all. \nAgent: Thank you for contacting us.",
     "transcript_timestamp": "2020-05-19 08:17:00",
     "intent": "USAGE_ENQUIRY",
-    "agent_id": "Agent_091"
+    "agent_id": "Agent_013"
   },
   {
     "id": "Transcript_092",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_092. How can I help? \nCustomer: Please update my address for broadband account 80020000092. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is James. How can I help? \nCustomer: Please update my address for broadband account 80020000092. \nAgent: I can help with that. Please confirm your new address. \nCustomer: 123 Maple Street. \nAgent: Updated successfully. \nCustomer: Thanks. \nAgent: Anything else today? \nCustomer: No.",
     "transcript_timestamp": "2020-05-19 09:04:00",
     "intent": "ADDRESS_UPDATE",
-    "agent_id": "Agent_092"
+    "agent_id": "Agent_001"
   },
   {
     "id": "Transcript_093",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_093. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000093. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Sarah. How can I help? \nCustomer: My auto-payment failed for mobile plan 9000000093. \nAgent: I see that. The payment failed due to insufficient balance. \nCustomer: Please retry it. \nAgent: I\u2019ve initiated a retry. \nCustomer: Thank you. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-19 09:51:00",
     "intent": "PAYMENT_FAILURE",
-    "agent_id": "Agent_093"
+    "agent_id": "Agent_002"
   },
   {
     "id": "Transcript_094",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_094. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000094. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michael. How can I help? \nCustomer: I see incorrect charges on my landline number 80020000094. \nAgent: I\u2019m sorry about that. I\u2019ll raise a dispute for you. \nCustomer: Please proceed. \nAgent: Dispute has been logged. You\u2019ll get updates by email. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-19 10:38:00",
     "intent": "CHARGE_DISPUTE",
-    "agent_id": "Agent_094"
+    "agent_id": "Agent_003"
   },
   {
     "id": "Transcript_095",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_095. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000095. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Jessica. How can I help? \nCustomer: I need a SIM replacement for mobile number 9000000095. \nAgent: Sure, I\u2019ve initiated a SIM replacement request. \nCustomer: When will I receive it? \nAgent: Within 2 business days. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-19 11:25:00",
     "intent": "SIM_REPLACEMENT",
-    "agent_id": "Agent_095"
+    "agent_id": "Agent_004"
   },
   {
     "id": "Transcript_096",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_096. How can I help? \nCustomer: Can you check the status of my recharge for 80020000096? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is David. How can I help? \nCustomer: Can you check the status of my recharge for 80020000096? \nAgent: One moment please. \nAgent: Your recharge is pending. \nCustomer: Okay, thanks. \nAgent: Let me know if you need anything else.",
     "transcript_timestamp": "2020-05-19 12:12:00",
     "intent": "PAYMENT_STATUS",
-    "agent_id": "Agent_096"
+    "agent_id": "Agent_005"
   },
   {
     "id": "Transcript_097",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_097. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000097. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Michelle. How can I help? \nCustomer: Please correct my contact details for broadband account 9000000097. \nAgent: I\u2019ve updated your profile. \nCustomer: Thank you. \nAgent: Happy to help.",
     "transcript_timestamp": "2020-05-19 12:59:00",
     "intent": "PROFILE_UPDATE",
-    "agent_id": "Agent_097"
+    "agent_id": "Agent_006"
   },
   {
     "id": "Transcript_098",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_098. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000098. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Christopher. How can I help? \nCustomer: My router isn\u2019t working for broadband ID 80020000098. \nAgent: I\u2019ll schedule a replacement. \nCustomer: Please do. \nAgent: It will be delivered tomorrow. \nCustomer: Thanks.",
     "transcript_timestamp": "2020-05-19 13:46:00",
     "intent": "MODEM_REPLACEMENT",
-    "agent_id": "Agent_098"
+    "agent_id": "Agent_007"
   },
   {
     "id": "Transcript_099",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_099. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000099? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Amanda. How can I help? \nCustomer: Can you share last month\u2019s usage for 9000000099? \nAgent: Your total usage was 120 GB. \nCustomer: Great, thank you. \nAgent: Anything else today?",
     "transcript_timestamp": "2020-05-19 14:33:00",
     "intent": "DATA_USAGE_ENQUIRY",
-    "agent_id": "Agent_099"
+    "agent_id": "Agent_008"
   },
   {
     "id": "Transcript_100",
     "transcript_date": "2020-05-19",
-    "transcript": "Agent: Welcome to Teletele Communication. My name is Agent_100. How can I help? \nCustomer: Please retry my failed recharge for 80020000100. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
+    "transcript": "Agent: Welcome to Teletele Communication. My name is Robert. How can I help? \nCustomer: Please retry my failed recharge for 80020000100. \nAgent: Done. The payment is being processed. \nCustomer: Thanks. \nAgent: You\u2019ll receive a confirmation shortly.",
     "transcript_timestamp": "2020-05-19 15:20:00",
     "intent": "PAYMENT_RETRY",
-    "agent_id": "Agent_100"
+    "agent_id": "Agent_009"
   }
 ]

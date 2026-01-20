@@ -8,43 +8,14 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
-
-import streamlit as st
-
 # ----------------------------------------------------
-# Load API key: secrets → .env → user input in app
+# Load .env (optional, for local dev)
 # ----------------------------------------------------
-
-from dotenv import load_dotenv
 load_dotenv()
 
-# 1) Try Streamlit secrets first (your deployed app)
-secret_key = st.secrets.get("OPENAI_API_KEY") if hasattr(st, "secrets") else None
-
-# 2) Then fallback to .env (your local dev)
-env_key = os.getenv("OPENAI_API_KEY")
-
-# 3) If neither exists, ask user for key in sidebar
-if not secret_key and not env_key:
-    st.sidebar.warning("🔐 OpenAI API Key Required")
-    user_key = st.sidebar.text_input(
-        "Paste your OpenAI API key",
-        type="password",
-        help="Your key is not stored — it only lives for this session."
-    )
-    OPENAI_API_KEY = user_key
-else:
-    OPENAI_API_KEY = secret_key or env_key
-
-if not OPENAI_API_KEY:
-    st.stop()  # Gracefully stop app until user provides key
-
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-
-
-# ----------------------------
-# Helpers (same logic as before)
-# ----------------------------
+# ====================================================
+# HELPER FUNCTIONS
+# ====================================================
 
 def l2_normalize(x: np.ndarray) -> np.ndarray:
     n = np.linalg.norm(x, axis=1, keepdims=True) + 1e-12
@@ -58,7 +29,11 @@ def load_meta_jsonl(path: str):
     return metas
 
 def embed_query_st(model, query: str) -> np.ndarray:
-    v = model.encode([query], convert_to_numpy=True, normalize_embeddings=True).astype(np.float32)
+    v = model.encode(
+        [query],
+        convert_to_numpy=True,
+        normalize_embeddings=True
+    ).astype(np.float32)
     return v
 
 def embed_query_openai(client, model_name: str, query: str) -> np.ndarray:
@@ -103,20 +78,61 @@ def build_llm_answer(client, model, query, hits):
     )
     return resp.output_text
 
-# ----------------------------
-# Streamlit App
-# ----------------------------
+# ====================================================
+# STREAMLIT APP
+# ====================================================
 
 def main():
-    load_dotenv()
-
     st.set_page_config(page_title="Dual-Index RAG Comparator", layout="wide")
 
-    st.title("🔍 Dual-Index RAG Comparison (FAISS)")
+    st.title("🔍 Embedding Models Comparison")
 
-    # -------- Config Sidebar --------
+    # ------------------------------------------------
+    # SIDEBAR SETTINGS (INCLUDING API KEY INPUT)
+    # ------------------------------------------------
     with st.sidebar:
         st.header("Settings")
+
+        # ----- OPENAI KEY (UI INPUT, NO VALIDATION YET) -----
+        st.subheader("🔑 OpenAI API Key")
+        secret_key = None
+
+        # Try Streamlit secrets (if deployed)
+        try:
+            secret_key = st.secrets.get("OPENAI_API_KEY", None)
+        except Exception:
+            secret_key = None
+
+        env_key = os.getenv("OPENAI_API_KEY")
+
+        # UI input (only used if no secrets or .env)
+        user_key = st.text_input(
+            "Paste your OpenAI API key",
+            type="password",
+            help="Key is used only for this session.",
+        )
+
+        # Decide which key to use
+        raw_key = secret_key or env_key or user_key
+
+        # CLEAN THE KEY (CRITICAL FIX)
+        OPENAI_API_KEY = raw_key.strip() if isinstance(raw_key, str) else None
+
+        # Store for downstream use
+        os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY or ""
+
+
+        if secret_key:
+            st.success("Using Streamlit Secrets API key")
+        # elif env_key:
+        #     st.success("Using local .env API key")
+        elif user_key:
+            st.info("Using user-provided API key")
+
+
+        # ----- RAG SETTINGS -----
+        st.subheader("RAG Config")
+
         k = st.slider("Top-K retrieved chunks", min_value=1, max_value=10, value=5)
 
         st_model_name = st.text_input(
@@ -134,11 +150,18 @@ def main():
             value=os.getenv("OPENAI_CHAT_MODEL", "gpt-4.1-mini")
         )
 
-
-    # -------- Load indexes once --------
+    # ------------------------------------------------
+    # LOAD INDEXES (CACHED)
+    # ------------------------------------------------
     @st.cache_resource
-    def load_indexes():
+    def load_indexes(st_model_name: str):
         idx_dir = "indexes"
+
+        # Auto-build indexes if missing (Streamlit Cloud case)
+        if not os.path.exists(os.path.join(idx_dir, "faiss_st.index")):
+            st.warning("Indexes not found — building them now...")
+            from build_indexes import main as build_indexes
+            build_indexes()
 
         st_index = faiss.read_index(os.path.join(idx_dir, "faiss_st.index"))
         st_meta = load_meta_jsonl(os.path.join(idx_dir, "st_meta.jsonl"))
@@ -147,19 +170,30 @@ def main():
         oa_meta = load_meta_jsonl(os.path.join(idx_dir, "openai_meta.jsonl"))
 
         st_model = SentenceTransformer(st_model_name)
-        openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-        return st_index, st_meta, oa_index, oa_meta, st_model, openai_client
+        # DO NOT create OpenAI client yet (we validate key later)
+        return st_index, st_meta, oa_index, oa_meta, st_model
 
-    st_index, st_meta, oa_index, oa_meta, st_model, openai_client = load_indexes()
+    st_index, st_meta, oa_index, oa_meta, st_model = load_indexes(st_model_name)
 
-    # -------- User Question --------
+    # ------------------------------------------------
+    # USER QUESTION
+    # ------------------------------------------------
     question = st.text_input(
         "Enter your question:",
         placeholder="Example: Which agent handled customer with broadband 80020000008?"
     )
 
     if st.button("Run RAG Comparison") and question.strip():
+
+        # ===== VALIDATE API KEY ONLY NOW =====
+        api_key = os.getenv("OPENAI_API_KEY")
+
+        if not api_key:
+            st.error("❌ Please enter your OpenAI API key in the sidebar first.")
+            st.stop()
+
+        openai_client = OpenAI(api_key=api_key)
 
         # -------- Sentence-Transformer Retrieval --------
         with st.spinner("Retrieving with Sentence-Transformers..."):
@@ -179,7 +213,9 @@ def main():
 
         # -------- OpenAI Embedding Retrieval --------
         with st.spinner("Retrieving with OpenAI embeddings..."):
-            qvec_oa = embed_query_openai(openai_client, openai_embed_model, question)
+            qvec_oa = embed_query_openai(
+                openai_client, openai_embed_model, question
+            )
             scores_oa, ids_oa = search(oa_index, qvec_oa, k)
 
             oa_hits = []
@@ -199,11 +235,9 @@ def main():
         with col1:
             st.subheader("🟦 Sentence-Transformers")
 
-            # ---- ANSWER FIRST ----
             st.markdown("**LLM Answer (Grounded in ST Retrieval)**")
             st.markdown(f"> {st_answer}")
 
-            # ---- CHUNKS BELOW ----
             st.markdown("**Retrieved Chunks**")
             for i, h in enumerate(st_hits, 1):
                 with st.expander(f"Chunk {i} | score={h['score']}"):
@@ -212,16 +246,13 @@ def main():
         with col2:
             st.subheader("🟪 OpenAI Embeddings")
 
-            # ---- ANSWER FIRST ----
             st.markdown("**LLM Answer (Grounded in OpenAI Retrieval)**")
             st.markdown(f"> {oa_answer}")
 
-            # ---- CHUNKS BELOW ----
             st.markdown("**Retrieved Chunks**")
             for i, h in enumerate(oa_hits, 1):
                 with st.expander(f"Chunk {i} | score={h['score']}"):
                     st.json(h)
-
 
     else:
         st.info("Enter a question and click **Run RAG Comparison**.")
